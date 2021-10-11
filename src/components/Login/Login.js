@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
-import handleGoogleSignIn from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
+import useFirebase from '../../hooks/useFirebase';
 
 
 const Login = () => {
-
+    const { handleGoogleSignIn } = useAuth();
     return (
         <div className="d-flex justify-content-center">
             <div className="text-center mt-3">
